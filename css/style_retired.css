@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* Color Scheme
+#FFFFFF - White
+#FC7753 - Sunset Orange
+#D7D0C8 - Whitest Grey
+#708090 - Slate Grey
+#5BC0EB - Sky Blue
+#66D7D1 - Neon Green with slight blue tint
+#283044 - Dark Slate Blue
+*/
+
+
+/* CSS Document */
+
+html, body {
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+header,
+section,
+footer {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+section,
+footer {
+    margin: 0 auto;
+    max-width: 1050px;
+    min-width: 400px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {}
+
+.container {
+    max-width: 1100px;
+    min-width: 400px;
+}
+
+.intro .container:before,
+footer .container:before {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.container:after {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+div {
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Header */
+
+header {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Exo 2';
+    text-transform: uppercase;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+}
+
+header a {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 2px solid #FFF;
+}
+
+header a:hover {
+    background: rgba(255, 255, 255, .9);
+    transition: .2s;
+    text-decoration: underline;
+    color: #5BC0EB;
+}
+
+.intro h2,
+.hobbies h2,
+.workExp h2 {
+    margin: 0;
+    font-family: 'Lato', cursive;
+    line-height: 1.5em;
+    font-size: 4em;
+    text-shadow: 1px 1px 2px #000;
+    color: #5BC0EB;
+}
+
+
+/* Intro */
+
+.intro {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.intro img {
+    border-radius: 30%;
+    margin-bottom: 10px;
+}
+
+
+/* Hobbies*/
+
+.hobbyItem {
+    height: 300px;
+    display: inline-block;
+    padding-top: 110px;
+    font-size: 1.8em;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.hobbySelect {
+    font-family: 'Lato', sans-serif;
+}
+
+.hobbySelect .photo {
+    background: url(../imgs/hobbyPhoto.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.hobbySelect .develop {
+    background: url(../imgs/hobbyDevelop.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.hobbySelect .fitness {
+    background: url(../imgs/hobbyFitness.jpeg) no-repeat;
+    background-size: cover;
+}
+
+
+/* Work Experience */
+
+.workExp {}
+
+
+/* Contact Me */
+
+.contactMe img {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+
+/* Footer */
+
+footer {
+    position: relative;
+}
+
+footer .copyright {
+    position: absolute;
+    top: 20;
+    right: 0;
+    font-size: .8em;
+}
+
+footer img {
+    max-width: 40px;
+}
+
+
+/* Media Adjustments */
+
+@media(max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+    .introText {
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) {
+    body {
+        font-size: 14px;
+    }
+    .introText {
+        text-align: center;
+    }
+}
+
+@media(min-width:992px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:1200px) {
+    body {
+        font-size: 16px;
+    }
+}
